@@ -43,17 +43,38 @@
     <!-- Your HTML Layout go here -->
     <!------------------------------>
 
-    <nav id="navbarPlaceholder"></nav>
+    <nav id="getNavbarPlaceholder"></nav>
 
     <div class="container-fluid bg-light text-dark p-5">
         <div class="container bg-light p-5">
             <h1 class="display-4">Hello <span id="name-goes-here"></span>, would you like some poetry</h1>
             <hr>
-            <p>Once upon a midnight dreary, as i pondered weak and weary.</p>
+            <p>Line of the day: <span id="quote_fill">You should not be seeing this</span></p>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Some popular hikes</h1>
+        <!-- Here is container for cards  -->
+        <div class="container">
+            <div id="hikes-go-here" class="row row-cols-auto">
+            </div>
         </div>
     </div>
 
-    <nav id="footerPlaceholder"></nav>
+    <!-- Templates for general use, not displayed -->
+    <template id="hikeCardTemplate">
+        <div class="card py-2 mx-2" style="width: 18rem;">
+            <img class="card-image card-img-top" src=" ..." alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a class="btn btn-primary card-href">Get Details</a>
+            </div>
+        </div>
+    </template>
+
+    <nav id="getFooterPlaceholder"></nav>
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
